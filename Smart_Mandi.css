@@ -134,12 +134,12 @@ a{
     position: relative;
     z-index: 1;
     top: 10vh;
-    height: 100vh;
-    width: 100vw;
+    height: 120vh;
+    width: 99vw;
     /* background-color: black; */
     display: grid;
     grid-template-columns: repeat(20, 1fr);
-    grid-template-rows: repeat(25, 1fr);
+    grid-template-rows: repeat(28, 1fr);
 }
 #box1{
     grid-column: 2/20;
@@ -232,6 +232,12 @@ a{
     grid-row: 2/3;
     margin-left: 15px;
 }
+#progress{
+   
+    accent-color: green;
+    width: 80%;
+    height: 30%;
+}
 #innerbox10{
     grid-row: 3/4;
     margin-left: 15px;
@@ -261,21 +267,26 @@ a{
     grid-column: 4/5;
     margin-left: 15px;
     margin-right: 15px;
+    margin-top: 10px;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
 }
 #select-crop{
-    font-size: 15px;
+    font-size: 13px;
     border-radius: 10px;
-    padding: 1px;
+    margin-top: 10px;
+    padding: 5px;
     background-color: aliceblue;
+    border: 1px solid gray;
 }
 #select-city{
-    font-size: 15px;
+    font-size: 13px;
     border-radius: 10px;
-    padding: 1px;
+    padding: 5px;
+    margin-top: 10px;
     background-color: aliceblue;
+    border: 1px solid gray;
 }
 #innerbox13{
     grid-row: 2/8;
@@ -547,8 +558,50 @@ td, th {
 
 /* footer  */
 
-/* #foot{
+#foot{
     width: 100vw;
-    height: 30vh;
+    height: 10vh;
     background-color: aliceblue;
-} */
+    display: grid;
+    grid-template-columns: repeat(20, 1fr);
+}
+#logo-name{
+    grid-column: 2/5;
+    /* background-color: aliceblue; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+
+}
+#privacy{
+    grid-column: 7/9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    /* font-size: 25px; */
+}
+#service{
+    grid-column: 9/11;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+#contact{
+    grid-column: 11/13;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+#copyright{
+    grid-column: 14/20;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
