@@ -173,11 +173,9 @@ width:60px;
 height:60px;
 background:#dff4d7;
 border-radius:50%;
-
 display:flex;
 align-items:center;
 justify-content:center;
-
 margin-bottom:15px;
 }
 
@@ -302,13 +300,9 @@ transform:scale(1.08);
 
 .remedy{
 margin-top:50px;
-
 background:linear-gradient(90deg,#e7f6e2,#f3fbf1);
-
 padding:25px;
-
 border-radius:18px;
-
 border-left:6px solid #39d20f;
 }
 
