@@ -1,0 +1,371 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Inter, sans-serif;
+}
+
+body{
+background:#f6f8f6;
+color:#1f2937;
+}
+
+/* .container{
+width:100%;
+max-width:1200px;
+margin:auto;
+} */
+ .hero,
+.symptoms,
+.result,
+.remedy
+{
+max-width:1300px;
+margin:auto;
+}
+.hero,
+.symptoms,
+.result,
+.remedy{
+padding-left:20px;
+padding-right:20px;
+}
+/* ====== NAVBAR ====== */
+header{
+    position:sticky;
+    top:0;
+    background:white;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:15px 60px;
+    box-shadow:0 2px 10px rgba(0,0,0,0.05);
+    z-index:1000;
+}
+
+.logo{
+    font-size:24px;
+    font-weight:bold;
+    color:#1b5e20;
+}
+
+nav a{
+    text-decoration:none;
+    margin:0 15px;
+    font-weight:600;
+    color:black;
+}
+
+nav a:hover{
+    color:#42d411;
+}
+
+.login-btn{
+    background:#42d411;
+    border:none;
+    padding:8px 18px;
+    border-radius:20px;
+    font-weight:bold;
+    cursor:pointer;
+}
+
+
+/* HERO */
+
+.hero{
+display:grid;
+grid-template-columns:2fr 1fr;
+align-items:center;
+
+background:#e8f5e3;
+padding:40px;
+border-radius:18px;
+margin-top:30px;
+}
+
+.hero h1{
+font-size:32px;
+margin-bottom:10px;
+}
+
+.hero p{
+color:#6b7280;
+line-height:1.6;
+}
+
+.hero-icon{
+width:150px;
+height:150px;
+background:#cfe5c9;
+border-radius:18px;
+
+display:flex;
+align-items:center;
+justify-content:center;
+
+justify-self:end;
+}
+
+.hero-icon img{
+width:80px;
+height:auto;
+opacity:0.6;
+}
+
+
+/* SYMPTOMS */
+
+.symptoms{
+margin-top:40px;
+}
+
+.symptom-header{
+display:flex;
+justify-content:space-between;
+margin-bottom:20px;
+}
+
+.view{
+color:#3dd20c;
+font-weight:500;
+}
+
+.symptom-grid{
+display:grid;
+grid-template-columns:repeat(4,1fr);
+gap:25px;
+}
+
+
+/* CARD */
+
+.card{
+background:white;
+padding:25px;
+border-radius:18px;
+border:1px solid #e5e7eb;
+
+transition:0.3s;
+cursor:pointer;
+}
+
+.card:hover{
+transform:translateY(-6px);
+border-color:#39d20f;
+box-shadow:0 10px 25px rgba(0,0,0,0.05);
+}
+
+.card h3{
+margin-bottom:8px;
+}
+
+.card p{
+font-size:14px;
+color:#6b7280;
+line-height:1.5;
+}
+
+
+/* ICON */
+
+.icon{
+width:60px;
+height:60px;
+background:#dff4d7;
+border-radius:50%;
+
+display:flex;
+align-items:center;
+justify-content:center;
+
+margin-bottom:15px;
+}
+
+.material-symbols-outlined{
+font-size:38px;
+color:#39d20f;
+}
+
+.card:hover .icon{
+background:#39d20f;
+}
+
+.card:hover .material-symbols-outlined{
+color:white;
+}
+
+
+/* CHECK BUTTON */
+
+.center{
+text-align:center;
+margin-top:30px;
+}
+
+.check-btn{
+background:#39d20f;
+color:#0f172a;
+
+padding:15px 45px;
+border:none;
+border-radius:30px;
+
+font-weight:600;
+
+display:flex;
+align-items:center;
+gap:8px;
+
+margin:auto;
+cursor:pointer;
+}
+
+.btn-icon{
+font-size:40px;
+color:#0f172a;
+}
+
+.check-btn:hover{
+transform:scale(1.05);
+box-shadow:0 8px 20px rgba(57,210,15,0.4);
+}
+
+
+/* RESULT SECTION */
+
+.result{
+margin-top:60px;
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:30px;
+align-items:center;
+}
+
+.result-box{
+background:white;
+padding:35px;
+border-radius:20px;
+border:1px solid #e5e7eb;
+}
+
+.tag{
+color:#2cc10d;
+font-size:12px;
+font-weight:600;
+letter-spacing:1px;
+}
+
+.result-box h2{
+margin:10px 0 20px;
+}
+
+.result-box p{
+color:#6b7280;
+margin-bottom:20px;
+line-height:1.6;
+}
+
+.solution-grid{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:20px;
+}
+
+.solution-grid ul{
+padding-left:20px;
+margin-top:10px;
+}
+
+.solution-grid li{
+margin-bottom:5px;
+}
+
+
+/* IMAGE */
+
+.image-box{
+overflow:hidden;
+border-radius:22px;
+}
+
+.image-box img{
+width:100%;
+transition:0.5s;
+}
+
+.image-box:hover img{
+transform:scale(1.08);
+}
+
+
+/* REMEDY SECTION */
+
+.remedy{
+margin-top:50px;
+
+background:linear-gradient(90deg,#e7f6e2,#f3fbf1);
+
+padding:25px;
+
+border-radius:18px;
+
+border-left:6px solid #39d20f;
+}
+
+.remedy-grid{
+display:grid;
+grid-template-columns:auto 1fr auto;
+gap:20px;
+align-items:center;
+}
+
+.remedy-icon{
+width:60px;
+height:60px;
+background:#39d20f;
+border-radius:50%;
+display:flex;
+align-items:center;
+justify-content:center;
+}
+
+.leaf{
+color:white;
+font-size:32px;
+}
+
+.remedy-icon span{
+color:white;
+font-size:32px;
+}
+
+.guide-btn{
+background:#0f172a;
+color:white;
+
+padding:12px 20px;
+border:none;
+border-radius:10px;
+
+cursor:pointer;
+transition:0.3s;
+}
+
+.guide-btn:hover{
+background:#111827;
+}
+
+
+/* FOOTER */
+
+ footer{
+background-color:#1b5e20;
+text-align:center;
+color:white;
+font-size:14px;
+height:80px;
+display:flex;
+justify-content:center;
+align-items:center;
+margin-top:60px;
+}
