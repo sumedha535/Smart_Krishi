@@ -1,0 +1,181 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Poppins,sans-serif;
+}
+
+body{
+background:#f5f6f7;
+}
+
+/* Navbar */
+
+.navbar{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:15px 40px;
+background:white;
+box-shadow:0 2px 5px rgba(0,0,0,0.1);
+}
+
+.logo{
+font-size:18px;
+font-weight:600;
+}
+
+.navbar nav a{
+margin:0 10px;
+text-decoration:none;
+color:#333;
+font-size:14px;
+font-weight:bold;
+}
+
+.active{
+color:green;
+font-weight:500;
+}
+
+.login{
+background:#2ecc71;
+color:white;
+border:none;
+padding:8px 18px;
+border-radius:20px;
+cursor:pointer;
+}
+
+/* Hero */
+
+.hero{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:50px;
+background:#eaf3ea;
+}
+
+.ask-btn{
+background:#2ecc71;
+color:white;
+border:none;
+padding:10px 20px;
+border-radius:25px;
+cursor:pointer;
+}
+
+/* Filters */
+
+.filters{
+display:flex;
+gap:20px;
+padding:30px 50px;
+}
+
+.filters select{
+padding:8px;
+border-radius:20px;
+border:1px solid #ccc;
+}
+
+.filter-btn{
+padding:8px 20px;
+border-radius:20px;
+border:1px solid green;
+background:white;
+color:green;
+}
+
+/* Questions */
+
+.questions{
+display:grid;
+grid-template-columns:repeat(2,1fr);
+gap:20px;
+padding:0 50px;
+}
+
+.card{
+background:white;
+padding:20px;
+border-radius:10px;
+box-shadow:0 2px 8px rgba(0,0,0,0.1);
+position:relative;
+}
+
+.tag{
+position:absolute;
+top:15px;
+right:15px;
+background:#dff5e5;
+color:green;
+padding:4px 10px;
+border-radius:10px;
+font-size:12px;
+}
+
+.card-footer{
+display:flex;
+justify-content:space-between;
+margin-top:15px;
+font-size:14px;
+}
+
+.card-footer a{
+color:green;
+text-decoration:none;
+}
+
+/* Load More */
+
+.load-more{
+text-align:center;
+margin:40px;
+}
+
+.load-more button{
+padding:10px 25px;
+border-radius:20px;
+border:1px solid green;
+background:white;
+color:green;
+}
+
+/* Footer */
+
+.footer{
+background:#1b5e20;
+color:white;
+padding:40px;
+margin-top:40px;
+}
+
+.footer-container{
+display:grid;
+grid-template-columns:repeat(4,1fr);
+gap:30px;
+}
+
+.footer input{
+padding:8px;
+width:100%;
+margin:10px 0;
+border:none;
+border-radius:5px;
+}
+
+.subscribe{
+background:#2ecc71;
+border:none;
+padding:8px 15px;
+color:white;
+border-radius:5px;
+}
+
+.copyright{
+text-align:center;
+margin-top:30px;
+color:#aaa;
+}
