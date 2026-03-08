@@ -1,10 +1,5 @@
 
-
-</div>
-
-<div class="market">
 <!DOCTYPE html>
-
 <html lang="en">
 <head>
 <meta charset="UTF-8">
@@ -26,7 +21,46 @@ body{
 background:#f4f6f5;
 }
 
+/* ====== NAVBAR ====== */
 header{
+    position:sticky;
+    top:0;
+    background:white;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:15px 60px;
+    box-shadow:0 2px 10px rgba(0,0,0,0.05);
+    z-index:1000;
+}
+
+.logo{
+    font-size:24px;
+    font-weight:bold;
+    color:#1b5e20;
+}
+
+nav a{
+    text-decoration:none;
+    margin:0 15px;
+    font-weight:600;
+    color:black;
+}
+
+nav a:hover{
+    color:#42d411;
+}
+
+.login-btn{
+    background:#42d411;
+    border:none;
+    padding:8px 18px;
+    border-radius:20px;
+    font-weight:bold;
+    cursor:pointer;
+}
+
+/* header{
 display:flex;
 justify-content:space-between;
 align-items:center;
@@ -62,7 +96,7 @@ border:none;
 padding:8px 18px;
 border-radius:20px;
 cursor:pointer;
-}
+} */
 
 .banner{
 background:#e6f6ea;
@@ -201,7 +235,7 @@ margin-left:calc(-50vw + 50%);
 <a href="./farmer-help.html">Farmer Help</a>
 </nav>
 
-<button class="login">Login</button>
+<button class="login-btn">Login</button>
 
 </header>
 
