@@ -1,0 +1,288 @@
+
+
+</div>
+
+<div class="market">
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Smart Krishi - Sell Crop</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Poppins, sans-serif;
+}
+
+body{
+background:#f4f6f5;
+}
+
+header{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:15px 40px;
+background:white;
+}
+
+.logo{
+display:flex;
+align-items:center;
+gap:10px;
+color:#42d411;
+font-weight:600;
+}
+
+nav a{
+text-decoration:none;
+margin:0 10px;
+color:#333;
+font-size:14px;
+font-weight:bold;
+}
+
+nav a.active{
+color:#42d411;
+font-weight:600;
+}
+
+.login{
+background:#42d411;
+color:white;
+border:none;
+padding:8px 18px;
+border-radius:20px;
+cursor:pointer;
+}
+
+.banner{
+background:#e6f6ea;
+margin:20px;
+padding:30px;
+border-radius:10px;
+}
+
+.banner h1{
+font-size:28px;
+margin-bottom:10px;
+}
+
+.container{
+display:flex;
+gap:30px;
+padding:20px;
+}
+
+.form-box{
+background:white;
+padding:25px;
+border-radius:10px;
+width:65%;
+}
+
+.form-grid{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:15px;
+margin-top:15px;
+}
+
+input,select{
+padding:10px;
+border:1px solid #ccc;
+border-radius:6px;
+}
+
+.upload{
+margin-top:20px;
+border:2px dashed #2ecc71;
+padding:40px;
+text-align:center;
+border-radius:10px;
+color:#777;
+}
+
+.post-btn{
+margin-top:20px;
+width:100%;
+background:#2ecc71;
+border:none;
+color:white;
+padding:14px;
+border-radius:25px;
+font-size:16px;
+cursor:pointer;
+}
+
+.side{
+width:35%;
+display:flex;
+flex-direction:column;
+gap:20px;
+}
+
+.demand{
+background:#2ecc71;
+color:white;
+padding:20px;
+border-radius:10px;
+}
+
+.market{
+background:white;
+padding:15px;
+border-radius:10px;
+}
+
+.market img{
+width:100%;
+border-radius:10px;
+}
+
+.market button{
+margin-top:10px;
+background:#2ecc71;
+border:none;
+color:white;
+padding:10px;
+border-radius:20px;
+cursor:pointer;
+}
+
+.features{
+display:flex;
+gap:20px;
+padding:30px;
+}
+
+.feature{
+background:white;
+padding:20px;
+border-radius:10px;
+flex:1;
+text-align:center;
+}
+
+footer{
+text-align:center;
+padding:15px 0;
+background:#1b5e20;
+color:white;
+width:100vw;
+margin-left:calc(-50vw + 50%);
+}
+</style>
+
+</head>
+
+<body>
+
+<header>
+
+<div class="logo">
+🌿 Smart Krishi
+</div>
+
+<nav>
+<a href="./home.html">Home</a>
+<a href="./crop.html">Crop Doctor</a>
+<a href="./Fertilizer_Guide.html">Fertilizer Guide</a>
+<a href="./Smart_Mandi.html">Smart Mandi</a>
+<a href="./sellcrop.html">Sell Crop</a>
+<a href="./farmer-help.html">Farmer Help</a>
+</nav>
+
+<button class="login">Login</button>
+
+</header>
+
+<section class="banner">
+
+<h1>Sell Your Crop</h1>
+<p>List your harvest and connect with verified buyers across the country instantly.</p>
+
+</section>
+<section class="container">
+
+<div class="form-box">
+
+<h2>Crop Listing Details</h2>
+<div class="form-grid">
+<input type="text" placeholder="Full name as per Aadhaar">
+<input type="text" placeholder="10-digit mobile number">
+
+<input type="text" placeholder="Enter your location">
+
+<select>
+<option>Select Crop</option>
+<option>Wheat</option>
+<option>Rice</option>
+<option>Cotton</option>
+</select>
+
+<input type="text" placeholder="Quantity">
+
+<input type="text" placeholder="Expected Price (Per Quintal)">
+
+</div>
+
+<div class="upload">
+
+<p>Click or drag photos here</p>
+<span>PNG, JPG up to 10MB</span>
+
+</div>
+
+<button class="post-btn">Post Crop for Sale</button>
+
+</div>
+
+<div class="side">
+
+<div class="demand">
+
+<h3>Current Demand</h3>
+<h1>24 Buyers Interested</h1>
+<p>+12% vs last week</p>
+<img src="cottons.jpg">
+<h3>Cotton (Kapas)</h3>
+<p>High demand cotton for export.</p>
+
+<h4>₹7,200 / Q</h4>
+<button>View Market Trends</button>
+</div>
+</div>
+</section>
+<section class="features">
+<div class="feature">
+<h3>✅ Verified Buyers</h3>
+<p>Every buyer is KYC verified.</p>
+</div>
+<div class="feature">
+<h3>🚚Logistic Support</h3>
+<p>Help with transport to mandi.</p>
+</div>
+<div class="feature">
+<h3>💰Instant Payment</h3>
+<p>Direct payment to bank.</p>
+</div>
+
+</section>
+
+<footer>
+
+<p>© 2026 Smart Krishi - Empowering Farmers with Technology</p>
+
+</footer>
+
+</body>
+</html>
